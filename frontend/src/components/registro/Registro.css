@@ -1,0 +1,96 @@
+.BASE {
+    width: 375px;
+    height: 250px;
+    margin: 0 0 11px;
+    padding: 0 0 15px;
+    background-color: #fff;
+  }
+  .msjTrue{
+    position: absolute;
+    width: 327px;
+    height: 280px;
+    background-image: linear-gradient(95deg, #1F3262 0%, #4A4D9B 40%, #11e7f6 100%);
+    margin-left: 2.7rem;
+    animation: fromRight 300ms linear;
+    border-radius: 15px;
+    border: none;
+  }
+  .xDiv{
+    margin-top: 2rem;
+  }
+  .xcircle{
+    width: 40px;
+  }
+  .msjText{
+    color: #FAFAFA;
+    font-size: 35px;
+ }
+ .textP{
+    margin: 0;
+  }
+  .textMsj{
+    color: #FAFAFA;
+    font-size: 18px;
+  }
+  .COMPLETE {
+    width: 280px;
+    height: 100px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+    margin-left: 45px;
+    margin-bottom: 2.5rem;
+   
+  }
+  .Rectangle-1 {
+    width: 251px;
+    height: 70px;
+    flex-grow: 0;
+    margin: 8px 0 0;
+    padding: 14.9px 45.7px 14.9px 19.6px;
+    border-radius: 8px;
+    background-color: #cdcdcd;
+    text-align: left;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1f3262;
+  }
+  .-de-2 {
+    width: 59px;
+    height: 36px;
+    margin: 29px 158px 0;
+    
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f3262;
+  }
+  .imgMember{
+    margin-bottom: 5rem;
+}
+.arrowImg{
+    margin-top: 5.8rem;
+    width: 1.7rem;
+  }
+  .labelCheckR{
+  
+    margin-bottom: 15px;
+    margin-left: 0.5rem;
+  }
+  .spanR{
+    font-size: 18px;
+  }

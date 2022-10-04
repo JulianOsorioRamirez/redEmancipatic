@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: user.controllers.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: user.controllers.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** 
+* @author Julian Osorio
+* @author Isaac Ortega
+* @author Gustavo Carretero
+*/
+
+/**
+ * Controlador de las diferentes funciones que implican la interaccion de el usuario
+ * Empezamos requeriendo las dependencias que utilizaremos en este controlador:
+ * 
+ * Para el encriptamiento de la contraseña utilizamos la libreria Bcrypt y requerimos el modelo de usuario 
+ * para los CRUD con la BD que en este caso es mongoDB
+ */
+
+const bcrypt = require("bcrypt");
+const Usuarios = require('../models/userModels')
+
+/**
+    * User
+    * @constructor
+    * @return {json}
+    * Guardamos en la constante User las distintas funciones que vamos a utilizar para la interaccion de el usuario
+    * en el front que involucren datos de el backend
+    */
+
+const user = {
+
+  /**
+   * register
+   * @contructor
+   * @return {json}
+   * Utilizamos regex para validar los diferentes campos de el registro de usuario, lo validamos con condicionales
+   * y si todo es correcto hacemos un CRUD en la BD de Usuarios y damos una respuesta positiva a el FRONT
+   */
+  registrer: (req, res) => {
+    
+
+    const nameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const unNameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const telfExp = new RegExp(/^\d{9}$/);
+    const passExp = new RegExp(
+      /(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}/
+    );
+    const postalCode = new RegExp(/^(?:0[1-9]\d{3}|[1-4]\d{4}|5[0-2]\d{3})$/)
+
+
+    const name = req.body.name
+    const unName = req.body.unName
+    const pass = req.body.pass
+    const number = req.body.number
+    const cp = req.body.postalCode
+    const passConf = req.body.passConf
+    let fecha = new Date()
+        var fecha1 = fecha.getFullYear() + '-' + (fecha.getMonth() + 1) + '-' + fecha.getDate();
+
+
+
+
+    if (
+
+      !nameExp.test(name) ||
+      !unNameExp.test(unName) ||
+      !passExp.test(pass) ||
+      pass != passConf ||
+      !telfExp.test(number) ||
+      !postalCode.test(cp)
+    ) {
+  
+      //res.send
+
+    } else {
+      /**
+       * Encriptamos la contraseña para su posterior CRUD en la BD
+       */
+      
+      bcrypt.hash(pass, 10, (err, palabraSecretaEncriptada) => {
+        if (err) {
+
+        } else {
+
+          palabraEncriptada = palabraSecretaEncriptada;
+
+
+        }
+        let userJson2 = {
+          Nombre: name,
+          Apellidos: unName,
+          'Nombre y Apellidos': `${name} ${unName}`,
+          'Movil':number,
+          CP: cp,
+          pass: palabraEncriptada,
+          'Foto miembro':'',
+          'fecha de inscripcion':fecha1
+          
+        };
+        let UsuarioRegistrado = new Usuarios(userJson2)
+        UsuarioRegistrado.save(function (err, UsuarioRegistrado) {
+res.json({usuario: UsuarioRegistrado})
+
+        })
+      });
+      
+    }
+  },
+  /**
+   * login
+   * @contructor
+   * @return {json}
+   * Hacemos una peticion de datos a el Front que se envian en un @const {JSON} y hacemos una busqueda en la BD 
+   * para verificar que el usuario sea correcto
+   */
+
+  login: async (req, res) => {
+    const telf = req.body.telf
+    const pass = req.body.pass
+   
+    var login = await Usuarios.findOne({ Movil: telf })
+
+
+    if (login == null) {
+      res.json({ logeado: false })
+    } else {
+      /**
+       * aqui comparamos la contraseña introducida por el usuario con la encriptada que viene de la BD
+       * para verificar que es correcto si es asi realiamos una respuesta positiva con un @const {JSON} a el front
+       */
+      bcrypt.compare(pass, login.pass).then(function (result) {
+        if (result === true) {
+          res.json({ logeado: login.Nombre })
+
+        } else {
+          res.json({ logeado: false })
+        }
+      });
+
+    }
+
+  }
+}
+
+module.exports = user;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="categories.html">categories</a></li><li><a href="categories.postCategories2.html">postCategories2</a></li><li><a href="solicitudes.html">solicitudes</a></li><li><a href="solicitudes.postSolicitudes.html">postSolicitudes</a></li><li><a href="user.html">user</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bcrypt">bcrypt</a></li><li><a href="global.html#Categorias">Categorias</a></li><li><a href="global.html#Solicitudes">Solicitudes</a></li><li><a href="global.html#Voluntarios">Voluntarios</a></li><li><a href="global.html#voluntarios">voluntarios</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Thu Aug 04 2022 12:57:26 GMT+0200 (hora de verano de Europa central)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

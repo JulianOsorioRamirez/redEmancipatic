@@ -1,0 +1,1317 @@
+/* FUENTE */
+
+
+@font-face {
+  font-family: "BalooPaaji";
+  src: url("./assets/fonts/BalooPaaji-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-Family: "Atkinson";
+  src: url("./assets/fonts/Atkinson-Hyperlegible-Regular-102.otf")
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url('./assets/fonts/websymbols-regular-webfont.eot');
+  src: url('./assets/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded'),
+    url('./assets/fonts/websymbols-regular-webfont.woff') format('woff'),
+    url('./assets/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+    url('./assets/fonts/websymbols-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* TODO */
+
+* {
+
+  color: #1F3262;
+
+}
+
+body {
+  font-family: 'BalooPaaji';
+  overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+
+  margin: 0px;
+  width: 100%;
+  
+}
+.logoHome{
+  width: 100%;
+}
+
+.logo1 {
+  margin: 0px auto;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 10%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+
+}
+
+.phoneBox {
+  margin: 8px;
+}
+
+.passBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  width: 100%;
+}
+
+.registBox {
+  margin: 8px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.registBox * {
+
+  margin: 12px;
+
+}
+
+.remember {
+  margin: 8px;
+
+}
+
+.passRemember {
+  margin: 16px;
+  padding-right: 48px;
+  align-self: flex-end;
+}
+
+.button {
+  margin-top: 8px;
+}
+
+/* oooooooooooooooooooooooooooooooooooooooooooooo   tipousuario   oooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+.tipousuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.titulo {
+  width: 60%;
+}
+
+.imagen {
+  width: 120px;
+  height: 120px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 100%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+
+.contenedortipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tipo {
+  width: 60%;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoncontinuar {
+  margin-bottom: 24px;
+}
+
+
+
+/* oooooooooooooooooooooooooooooooooooooooooooooo  fin tipousuario   oooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* oooooooooooooooooooooooooooooooooooooooooooooooo   inicio   oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.imagendonar {
+  width: 80%;
+  height: 120px;
+  background-color: #63759b;
+  border: 1px solid black;
+
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.donar {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+.donar * {
+  margin: 0%;
+}
+
+.donar input {
+  margin: 4px;
+
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  margin-top: 24px;
+
+}
+
+.categoria {
+  margin-left: 24px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+}
+
+.imagen1 {
+  width: 80px;
+  height: 80px;
+  background-color: #63759b;
+  border: 1px solid black;
+  border-radius: 100%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #8f8f8f,
+    -23px -23px 46px #ffffff;
+}
+
+.letras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 8px;
+  width: 70%;
+}
+
+.titulo {
+  margin: 0%;
+  padding: 2px;
+}
+
+.parrafos {
+  margin: 0px;
+  margin-left: 4%;
+
+}
+
+/* 000000000000000000000000000000000000000000000000   fin inicio   ooooooooooooooooooooooooooooooooooooooooo */
+/* 000000000000000000000000000000000000000000000000   cada categoria   ooooooooooooooooooooooooooooooooooooo */
+.nombrecategoria {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+
+/* 000000000000000000000000000000000000000000000000000  julian    000000000000000000000000000000000000000000 */
+
+
+
+/* 000000000000000000000000000000000000000000000000000  julian    000000000000000000000000000000000000000000 */
+.phoneBox{
+
+  margin: 8px;
+}
+
+.passBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 100%;
+}
+
+.registBox {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.remember {
+  margin: 8px;
+
+}
+.rememberText{
+  width: 171px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: AtkinsonHyperlegible !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+
+}
+
+.passRemember {
+  padding-right: 48px;
+  align-self: flex-end;
+}
+
+.buttonReg {
+  margin-top: 1rem;
+}
+
+.regisText {
+  margin: 0;
+  margin-right: 5.8rem;
+  font-size: 15px;
+}
+
+.regisTextR {
+  margin: 0;
+  margin-right: 2rem;
+  font-size: 15px;
+}
+
+.regisTextM {
+  margin: 0;
+  margin-right: 8rem;
+  font-size: 15px;
+}
+
+.regisTextC {
+  margin: 0;
+  margin-right: 5rem;
+  font-size: 15px;
+}
+
+.inputBox {
+  margin: 2rem;
+}
+
+.checkViewH1 {
+  margin-top: 5px;
+  font-size: 27.5px;
+}
+
+
+.FormText1 {
+  font-size: 20px;
+}
+.formContainer{
+  width: 291px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  margin: 30px 36px 82px 48px;
+  padding: 0;
+}
+.Text-here {
+  width: 73px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: AtkinsonHyperlegible !important;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+.QU-OFRECES {
+  width: 291px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin: 82px 36px 92px 48px;
+  padding: 0;
+}
+.FormText1{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+
+.CATEGORAS {
+  width: 291px;
+  height: 242px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 0 32px;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+.FormText2 {
+  margin-right: 3rem;
+  font-size: 20px;
+}
+.FormText2{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+  margin-left: 3rem;
+}
+.FormText3{
+  width: 291px;
+  height: 72px;
+  flex-grow: 0;
+ 
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+
+.checkContainer1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
+}
+
+.check1 {
+  width: 30px;
+  height: 30px;
+
+}
+
+/* . {
+  margin-right: 20px;
+  margin-bottom: 15px;
+} */
+
+span {
+  font-size: 27px;
+}
+
+.span2 {
+  font-size: 20px;
+}
+
+.span3 {
+  font-size: 15px;
+}
+
+.check2 {
+  width: 15px;
+  height: 15px;
+
+
+
+  border-radius: 4px;
+  border: solid 2px #1f3262;
+  background-color: #fafafa;
+  
+
+}
+
+.checkContainer2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelCheck2 {
+  margin-right: 15rem;
+  margin-bottom: 15px;
+}
+
+
+
+.spanRemember{
+  font-size: 20px;
+}
+.labelCheck3{
+
+  margin-right: 11.9rem;
+  margin-bottom: 15px;
+}
+
+.labelCheck4 {
+  margin-right: 11.3rem;
+  margin-bottom: 15px;
+}
+
+.labelCheck5 {
+  margin-right: 13.1rem;
+  margin-bottom: 15px;
+}
+
+.labelCheck6 {
+  margin-right: 7.9rem;
+  margin-bottom: 15px;
+}
+
+.labelCheck7 {
+  margin-right: 9.3rem;
+  margin-bottom: 15px;
+}
+
+
+.labelCheck8 {
+  margin-right: 11.6rem;
+  margin-bottom: 15px;
+}
+
+
+.labelCheck9 {
+  margin-right: 9.8rem;
+  margin-bottom: 15px;
+}
+
+.checkContainer3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonCont {
+  width: 150px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #63759b;
+  margin-top: 20px;
+}
+
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
+
+
+
+
+.cards2{
+
+ border: none;
+ width: 328px;
+   height: 145px;
+   float: left;
+   margin-left: 45px;
+   padding: 10px;
+   margin-bottom: 50px;
+   border: none;
+   border-radius: 10px;
+   padding: 5px;
+   background-color: #EBEBEB;
+   box-shadow: 0px 10px 10px 0px gray, 4px 4px 4px 4px white inset;
+   background-image: linear-gradient(to bottom, rgba(73, 188, 196, 0.22) 0%, rgba(223, 223, 223, 0) 100%);
+  
+  }
+#donate{
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+  float: center;
+  
+}
+
+.labelCheck8{
+  margin-left: 3.5rem;
+  margin-bottom: 15px;
+}.labelCheck9{
+  margin-left: 3.5rem;
+  margin-bottom: 15px;
+}
+.labelCheckRemember{
+  margin-right: 1.2rem;
+  font-family: AtkinsonHyperlegible !important;
+}
+.checkContainer3{
+  display: flex;
+  flex-direction: column;
+}
+.buttonCont{
+   width: 150px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #63759b;
+    margin-top: 20px;
+}
+.btncheck{
+  width: 149px !important;
+  height: 48px  !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  
+  border-radius: 8px;
+  background-color: #49bcc4;
+  font-size: 26px;
+  width: 245px;
+  height: 59px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 8.5rem;
+  border: none;
+  font-family: 'BalooPaaji';
+}
+.btncheck:active{
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.inputText{
+  margin: 7px;
+  margin-right: 110px;
+  color: #1F3262;
+}
+.inputTextM{
+  margin: 7px;
+  margin-right: 135px;
+  color: #1F3262;
+  
+}
+.inputName{
+  width: 104px;
+  height: 0px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  padding: 14.9px 45.7px 14.9px 19.6px;
+  border-radius: 8px;
+  background-color: #cdcdcd;
+}
+.ACCESO---REGISTRO-1-DE-2 {
+  width: 375px;
+  height: 812px;
+  flex-grow: 0;
+  padding: 0 0 52px;
+  background-color: #fff;
+}
+
+label {
+  width: 280px;
+  height: 36px;
+  flex-grow: 0;
+  /* font-family: BalooPaaji2; */
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+
+
+
+
+.-de-3{
+  width: 59px;
+  height: 36px;
+  
+  
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
+button {
+  width: 208px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #49bcc4;
+  font-size: 26px;
+  width: 245px;
+  height: 59px;
+  margin-left: 5rem;
+  font-family: 'BalooPaaji';
+}
+#buttonLogin{
+  margin-right: 5rem;
+  width: 250px;
+  margin-top: 3.5rem;
+  font-family: 'BalooPaaji';
+}
+#buttonLogin2{
+  width: 261px;
+  margin-right: 5.5rem;
+  margin-top: 2rem;
+  font-family: 'BalooPaaji';
+
+  margin-bottom: 5rem;
+
+}
+#newMemberTxt{
+  margin-left: 7.5rem;
+}
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.Text-Input {
+  width: 214.7px;
+  height: 26.3px;
+  flex-grow: 0;
+   font-family: AtkinsonHyperlegible; 
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f3262;
+}
+img.arrow-right-circle-SOLID {
+  width: 32px;
+  height: 32px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+.optionsText{
+  width: 277px;
+  height: 96px;
+  margin: 36px 49px 34px;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3262;
+}
+.opstionsTextC{
+  width: 375px;
+  height: 100px;
+  flex-grow: 0;
+  padding: 0 0 64px;
+  background-color: #fff;
+  margin-left: 1rem;
+}
+.Card-tipos-miembro{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+}
+.Card-tipos-miembro2{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+  margin-top: 8rem;
+}
+.Card-tipos-miembro3{
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 8px;
+  background-color: #4a4d9b;
+  margin-top: 8rem;
+}
+.members{
+  width: 108px;
+  height: 36px;
+  flex-grow: 0;
+  margin-left: 4.6rem;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fafafa;
+}
+.textCardOptions{
+  width: 265.7px;
+  height: 91.1px;
+  flex-grow: 0;
+  transform: rotate(-0.11deg);
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fafafa;
+}
+.memberImg{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+}
+.memberImg2{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+margin-top: 3rem;
+
+}
+.memberImg3{
+  border-radius: 50%;
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 114px;
+margin-left: 3.5rem;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+margin-top: 3rem;
+
+}
+
+
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+
+
+
+.inputsLog{
+  margin-right: 4rem;
+}
+#rememberText{
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.Line-1 {
+  width: 264px;
+  height: 1px;
+  margin: 23px 55px 20px 56px;
+  background-color: #cdcdcd;
+}
+
+.Ttulo-y-descripcin {
+  width: 375px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 96px 0 38px;
+  padding: 48px 24px 32px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 10px 0 rgba(53, 53, 53, 0.25);
+  background-image: linear-gradient(to bottom, #efefef 0%, #ebebeb 100%);
+}
+.userTextChat {
+  width: 327px;
+  height: 36px;
+  flex-grow: 0;
+  font-size: 28px;
+  margin-top: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #49bcc4;
+}
+.userMsjChat{
+  width: 327px;
+  height: 54px;
+  flex-grow: 0;
+  margin: 0;
+  /* font-family: AtkinsonHyperlegible !important; */
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+.CONVERSACIN-CHAT {
+  width: 375px;
+  height: 504px;
+  margin: 38px 0 0;
+  padding: 8px 0 0;
+  margin-top: 5rem;
+}
+.Burbuja {
+  width: 267px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.Burbuja2 {
+  width: 267px;
+  height: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 5rem;
+  margin-left: 2rem;
+
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.-Mensaje {
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+.-Mensaje2{
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+.-Mensaje3 {
+  width: 243px;
+ 
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+
+.BURBUJAS-CHAT {
+  width: 271px;
+  height: 49px;
+  background-color: #4a4d9b;
+  border-radius: 18px;
+  margin-left: 8rem;
+}
+.divMsjChat2{
+  margin-left: 2rem;
+}
+.fondo-campo-input {
+  width: 327px;
+  height: 36px;
+  margin: 0 1px 0 0;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+.BASEChat {
+  width: 375px;
+  height: 64px;
+ 
+  padding: 14px 23px 14px 24px;
+  background-color: #1f3262;
+}
+.chatInput {
+  width: 327px;
+  height: 36px;
+  margin-top: 7px;
+  margin-right: 6px;
+
+  font-size: 20px;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.TXT-PIC {
+  width: 327px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+/* 0000000000000000000000000000000000000000000000000 fin julian  00000000000000000000000000000000000000000000000000000000000000000000000 */
+
+
+
+
+
+/* CHAT  */
+
+
+.Ttulo-y-descripcin {
+  width: 375px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 96px 0 38px;
+  padding: 48px 24px 32px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 10px 0 rgba(53, 53, 53, 0.25);
+  background-image: linear-gradient(to bottom, #efefef 0%, #ebebeb 100%);
+}
+.userTextChat {
+  width: 327px;
+  height: 36px;
+  flex-grow: 0;
+  font-size: 28px;
+  margin-top: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #49bcc4;
+}
+.userMsjChat{
+  width: 327px;
+  height: 54px;
+  flex-grow: 0;
+  margin: 0;
+  /* font-family: AtkinsonHyperlegible !important; */
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+.CONVERSACIN-CHAT {
+  width: 375px;
+  height: 504px;
+  margin: 38px 0 0;
+  padding: 8px 0 0;
+  margin-top: 5rem;
+}
+.Burbuja {
+  width: 267px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.Burbuja2 {
+  width: 267px;
+  height: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 5rem;
+  margin-left: 2rem;
+
+  padding: 6px 12px;
+  border-radius: 18px;
+  background-color: #cdcdcd;
+}
+.-Mensaje {
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+.-Mensaje2{
+  width: 243px;
+  height: 108px;
+  flex-grow: 0;
+  
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+.-Mensaje3 {
+  width: 243px;
+ 
+  flex-grow: 0;
+  
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4d9b;
+}
+
+.BURBUJAS-CHAT {
+  width: 271px;
+  height: 49px;
+  background-color: #4a4d9b;
+  border-radius: 18px;
+  margin-left: 8rem;
+}
+.divMsjChat2{
+  margin-left: 2rem;
+}
+.fondo-campo-input {
+  width: 327px;
+  height: 36px;
+  margin: 0 1px 0 0;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+.BASEChat {
+  width: 375px;
+  height: 64px;
+ 
+  padding: 14px 23px 14px 24px;
+  background-color: #1f3262;
+}
+.chatInput {
+  width: 327px;
+  height: 36px;
+  margin-top: 7px;
+  margin-right: 6px;
+
+  font-size: 20px;
+  padding: 6px 20px 6px 22px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}

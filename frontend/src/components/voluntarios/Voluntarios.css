@@ -1,0 +1,285 @@
+.horizontal-scroll-wrapper {
+    width: 200px;
+    height: 414px;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    transform:rotate(-90deg) translateY(-100px);
+    margin-top: 7rem;
+    
+    
+  
+  
+   
+  
+  }
+  .horizontal-scroll-wrapper > div {
+   
+    transform: rotate(90deg);
+    transform-origin: right top;
+    width: 162px;
+    height: 191px;
+    margin: 0 32px 0 0; 
+    padding: 6px 8px 6px 3px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(22, 37, 48, 0.45);
+    background-color: #49bcc4;
+    flex-direction: column-reverse;
+  
+  }
+  .voluntarios{
+    margin:0px;
+    width: 100%;
+   
+  }
+  
+  .imgCards1{
+    border-radius: 50%;
+    width: 60%;
+  
+    
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    
+   
+  }
+  .cardTitles1{
+    color: #fafafa;
+    font-size: 22px;
+    margin: 0;
+  }
+  .voluntariesDisponible{
+    font-size: 22px;
+  }
+  
+  
+  
+  
+  
+  
+  .TXT-PIC {
+  
+    height: 304px;
+    display: flex;
+    flex-direction: column-reverse;;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 4px;
+    padding: 0;
+    margin-left: 3rem;
+  }
+  .voluntarioName {
+    width: 327px;
+    height: 48px;
+    flex-grow: 0;
+  
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f3262;
+    margin: 0;
+  }
+  .Valoraciones {
+    width: 300px;
+    height: 36px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-left: 3rem;
+  }
+  .starImg{
+    width: 20px;
+  }
+  .numStar{
+  
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 2.2rem;
+  
+    color: black;
+  
+  }
+  .-opiniones {
+    height: 27px;
+      flex-grow: 0;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #333;
+      margin-left: 0.5em;
+      margin-top: 24px;
+  }
+  .Aadir-opinin {
+    margin: 0;
+    font-size: 20px;
+  
+  }
+  .voluntarioDescripcion{
+    width: 247px;
+    height: 162px;
+  
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1f3262;
+  }
+  .questText{
+    margin-top: 0rem;
+    margin-right: 4rem;
+  }
+  .li{
+    width: 155px;
+    margin-left: 4rem;
+  }
+  .voluntarioImg{
+    border-radius: 50%;
+    max-width: 195px;
+  
+  
+  left: 114px;
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  
+  margin-top: 1rem;
+  
+  }
+  .Opiniones {
+    width: 208px;
+    height: 27px;
+  
+    margin-left: 4rem;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1f3262;
+  }
+
+  .OPININ---VALORACIN {
+    width: 90%;
+    height: 90%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #efefef 0%, #ebebeb 100%);
+    margin-bottom: 5rem;
+   
+  }
+  .Frame-9 {
+    width: 208px;
+    height: 48px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+  .opinionName {
+    width: 135px;
+    height: 27px;
+    flex-grow: 0;
+   
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4d9b;
+  }
+  .imgCards2{
+    float: left;
+    margin: 30px 0px 0px 0px;
+    border-radius: 50%;
+    max-width: 60px;
+  }
+  .opinionText{
+    width: 208px;
+    height: 81px;
+    flex-grow: 0;
+  
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    margin-top: 20px;
+  }
+  .horizontal-scroll-wrapperOpinion{
+    width: 208px;
+    height: 258px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    transform:rotate(-90deg) translateY(-100px);
+    margin-left: -20px;
+    padding-top: 172px;
+    
+  
+  }
+  .horizontal-scroll-wrapperOpinion > div {
+    transform: rotate(90deg);
+    transform-origin: right top;
+    width: 211px;
+    height: 163px;
+    margin: 0 32px 0 0;
+    padding: 6px 8px 6px 3px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(22 37 48 / 45%);
+    margin-left: -24px;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    margin-top: 63px;
+  }
+  .opiniones{
+    height: 320px;
+  }
+
+
+  .opiniones2{
+    height: 300px;  
+    z-index: -1;
+    }
+    .opinionhead{
+      margin-bottom: 120px;
+    }
+    

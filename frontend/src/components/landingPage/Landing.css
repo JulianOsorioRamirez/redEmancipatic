@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('../../assets/fonts/websymbols-regular-webfont.eot');
+    src: url('../../assets/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded'),
+      url('../../assets/fonts/websymbols-regular-webfont.woff') format('woff'),
+      url('../../assets/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+      url('../../assets/fonts/websymbols-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+.LogoLand{
+    margin-top: 50px;
+
+}
+
+.titleLand{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.imgCab{
+    width: 100%;
+
+
+}
+
+.subTitleLand{
+    color: #49BCC4;
+}
+
+.descubre{
+    background-color: #49BCC4;
+    width: 200px;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 6px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+
+.contText{
+    margin-top: 50px;
+    background-color: #4A4D9B;
+    padding: 10px;
+
+}
+
+.titleCont > p{
+    font-size: 20px;
+    color: #54D9E2;
+}
+
+.listText{
+    font-size: 18px;
+    color: #FAFAFA;
+}
+
+.listText > span{
+    font-size: 18px;
+    color: #54D9E2;
+}
+
+.parteCont{
+    background: #54D9E2;;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.parteCont > p{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.formarParte{
+    background-color: #FAFAFA;
+}
+
+.Como{
+    font-size: 30px;
+color: #4A4D9B;
+
+}
+
+.listComo > p{
+    font-size: 18px;
+    color: black;
+}
+
+.listComo > p > span{
+    font-size: 18px;
+    color: #4A4D9B;
+}
+
+
+.movilLand{
+    margin: 50px 0px 0px 100px;
+}
+
+.irEnlaces{
+    background-color: #4A4D9B;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.irEnlaces >p{
+    color: white;
+}
+
